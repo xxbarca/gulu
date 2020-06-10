@@ -1,7 +1,7 @@
 {
   "name": "gulu",
   "version": "0.0.1",
-  "description": "这是一个 UI 框架",
+  "description": "gulu - 一个 `Vue` 组件库",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,5 +19,18 @@
   "bugs": {
     "url": "https://github.com/xxbarca/gulu/issues"
   },
-  "homepage": "https://github.com/xxbarca/gulu#readme"
+  "homepage": "https://github.com/xxbarca/gulu#readme",
+  "dependencies": {
+    "vue": "^2.6.11",
+    "vue-hot-reload-api": "^2.3.4"
+  },
+  "devDependencies": {
+    "@vue/component-compiler-utils": "^3.1.2",
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.26.8",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "alias": {
+    "vue": "./node_modules/vue/dist/vue.common.js"
+  }
 }
