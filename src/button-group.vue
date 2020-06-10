@@ -6,7 +6,14 @@
 
 <script>
 	export default {
-		name: "button-group"
+		name: "button-group",
+		mounted() {
+			for (let node of this.$el.children) {
+				if (node.nodeName !== "BUTTON") {
+					console.warn(`g-button-group 的子元素应该全是button, 传入的是${node.nodeName}`)
+				}
+			}
+		}
 	}
 </script>
 
