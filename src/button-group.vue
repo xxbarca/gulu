@@ -23,15 +23,17 @@
 		vertical-align: middle;
 		> .g-button {
 			border-radius: 0;
-			margin-right: -1px;
+			&:not(first-child) {
+				margin-left: -1px;
+			}
 			&:first-child {
-				border-top-left-radius: var(--border-radius);
-				border-bottom-left-radius: var(--border-radius);
+				border-top-left-radius: var(--border-radios);
+				border-bottom-left-radius: var(--border-radios);
 			}
 
 			&:last-child {
-				border-top-right-radius: var(--border-radius);
-				border-bottom-right-radius: var(--border-radius);
+				border-top-right-radius: var(--border-radios);
+				border-bottom-right-radius: var(--border-radios);
 			}
 
 			&:hover {
